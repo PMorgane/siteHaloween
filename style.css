@@ -1,0 +1,51 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@500&family=UnifrakturCook:wght@700&display=swap');
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  
+    font-family: 'Jeepers', cursive;
+    background-image: url(./img/img1.jpg);
+    object-fit: cover;
+}
+
+h1,p {
+    margin-bottom: 20px;
+    text-align: center;
+    padding-top: 25px;
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+   
+}
+p, div{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+img {
+    padding: 10px 0 20px 0;
+    height: 500px;
+    width: 500px;
+}
+button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 15px;
+    height: 60px;
+    background-color: black;
+    font-weight: bold;
+    font-family:'UnifrakturCook', cursive; 
+    padding-left: 20px;
+    padding-right: 20px;
+}
