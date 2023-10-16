@@ -10,7 +10,7 @@
 body {
   
     font-family: 'Jeepers', cursive;
-    background-image: url(./img/img1.jpg);
+    background-image: url(./img/pexels-juan-vargas-5432190.jpg);
     object-fit: cover;
 }
 
@@ -18,14 +18,18 @@ h1,p {
     margin-bottom: 20px;
     text-align: center;
     padding-top: 25px;
-    font-size: 80px;
+    font-size: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #fff;
    
-}
-p, div{
+}/*
+header {
+    height: 50rem;
+    width: 60%;
+}*/
+div{
     flex-direction: column;
     display: flex;
     justify-content: center;
@@ -34,8 +38,8 @@ p, div{
 }
 img {
     padding: 10px 0 20px 0;
-    height: 500px;
-    width: 500px;
+    height: 80%;
+    width: 80%;
 }
 button {
     margin-top: 20px;
@@ -48,4 +52,9 @@ button {
     font-family:'UnifrakturCook', cursive; 
     padding-left: 20px;
     padding-right: 20px;
+}
+@media screen and (max-width: 640px) { 
+   body{
+    max-width: 100%;
+}
 }
