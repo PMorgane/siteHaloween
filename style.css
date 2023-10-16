@@ -12,6 +12,7 @@ body {
     font-family: 'Jeepers', cursive;
     background-image: url(./img/pexels-juan-vargas-5432190.jpg);
     object-fit: cover;
+    
 }
 
 h1,p {
@@ -56,5 +57,6 @@ button {
 @media screen and (max-width: 640px) { 
    body{
     max-width: 100%;
+    background-image: url(./img/pexels-daniel-fernandez-6299164.jpg);
 }
 }
