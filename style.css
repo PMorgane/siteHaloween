@@ -14,7 +14,10 @@ body {
     object-fit: cover;
     
 }
-
+#banner {
+    background-image: url(./img/pexels-karolina-grabowska-5477624.jpg);
+    
+}
 h1,p {
     margin-bottom: 20px;
     text-align: center;
@@ -25,11 +28,22 @@ h1,p {
     align-items: center;
     color: #fff;
    
-}/*
+}
+#logo{
+   width: 80px;
+   height: 170px;
+}
 header {
-    height: 50rem;
-    width: 60%;
-}*/
+    
+        display: flex;
+        text-align: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+
+   /* height: 50rem;
+    width: 60%;*/
+}
 div{
     flex-direction: column;
     display: flex;
