@@ -10,14 +10,15 @@
 body {
   
     font-family:'UnifrakturCook', cursive; 
-    background-image: url(./img/pexels-juan-vargas-5432190.jpg);
+    max-width: 100%;
+    background-image: url(./img/pexels-daniel-fernandez-6299164.jpg);
     object-fit: cover;
     
 }
 #banner {
-    background-image: url(./img/pexels-karolina-grabowska-5477624.jpg);
-    
+    margin-top: 50px;
 }
+
 h1,p {
     margin-bottom: 20px;
     text-align: center;
