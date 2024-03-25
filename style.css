@@ -1,6 +1,140 @@
 /*@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@500&family=UnifrakturCook:wght@700&display=swap');
 */
+@import url('https://fonts.googleapis.com/css2?family=Fruktur&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fruktur', cursive;
+}
+
+body {
+    background-image: url(./img/spiderWeb.png);
+    background-color: #0b061f;
+}
+
+section {
+    /*position: absolute;*/
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0b061f;
+}
+
+.spider {
+    position: absolute;
+    top: 0;
+    animation: animateSpider 15s ease-in-out infinite;
+}
+
+@keyframes animateSpider {
+
+    0%,
+    100% {
+        transform: translateY(-500px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+}
+
+.pumpkin01 {
+    position: absolute;
+    top: 100px;
+    right: 200px;
+    animation: animatePumpkin 8s ease-in-out infinite;
+}
+
+.pumpkin02 {
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    scale: 0.5;
+    animation: animatePumpkin 4s ease-in-out infinite;
+}
+
+@keyframes animatePumpkin {
+
+    0%,
+    100% {
+        transform: translateY(-50px);
+    }
+
+    50% {
+        transform: translateY(50px);
+    }
+}
+
+.spiderWeb {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    mix-blend-mode: screen;
+}
+
+h2 {
+    position: relative;
+    font-size: 12vw;
+    font-weight: 100;
+    display: flex;
+    color: white;
+    text-shadow: none;
+    animation: animate 5s infinite linear;
+}
+
+@keyframes animate {
+
+    0%,
+    18%,
+    20%,
+    50.1%,
+    60%,
+    65.1%,
+    80%,
+    90.1%,
+    92% {
+        color: rgba(255, 255, 255, 0.1);
+        text-shadow: none;
+    }
+
+    18.1%,
+    20.1%,
+    30%,
+    50%,
+    60.1%,
+    65%,
+    80.1%,
+    90%,
+    92.1%,
+    100% {
+        color: #ffac09;
+        text-shadow: 0 0 10px #ffac09,
+            0 0 20px #ffac09,
+            0 0 40px #ffac09,
+            0 0 80px #ffac09,
+            0 0 160px #ffac09;
+    }
+}
+
+p {
+    margin-bottom: 20px;
+    text-align: center;
+    padding-top: 25px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+
+}
+
+/*
 * {
     box-sizing: border-box;
     margin: 0;
@@ -44,19 +178,38 @@ header {
 
    /* height: 50rem;
     width: 60%;*/
-}
-div{
+
+
+div {
     flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 50px;
 }
-img {
+
+#img_1,
+#img_2,
+#img_3,
+#img_4,
+#img_5,
+#img_6,
+#img_7,
+#img_8,
+#img_9,
+#img_10,
+#img_11,
+#img_12,
+#img_13,
+#img_14,
+#img_15,
+#img_16 {
     padding: 10px 0 20px 0;
-    height: 80%;
+    height: 60%;
     width: 80%;
 }
+
+
 button {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -65,17 +218,31 @@ button {
     height: 60px;
     background-color: black;
     font-weight: bold;
-    font-family:'UnifrakturCook', cursive; 
+    font-family: 'UnifrakturCook', cursive;
     padding-left: 20px;
     padding-right: 20px;
 }
+
 #lien {
     text-decoration: none;
-    
+
 }
-@media screen and (max-width: 640px) { 
-   body{
-    max-width: 100%;
-    background-image: url(./img/pexels-daniel-fernandez-6299164.jpg);
-}
+
+
+@media screen and (max-width: 640px) {
+    .spider {
+        width: 30%;
+    }
+
+    .pumpkin01 {
+        top: 30px;
+        width: 76px;
+    }
+
+    .pumpkin02 {
+        width: 67%;
+
+        left: 50%;
+    }
+
 }
