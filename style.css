@@ -21,14 +21,15 @@ p:not(header p) {
     letter-spacing: 2px; /* Espacement entre les lettres */
     position: relative;
     display: inline-block;
-    background: linear-gradient(to bottom, white, red); /* Dégradé de haut en bas */
+    background: linear-gradient(to bottom, rgb(200, 124, 124), red); /* Dégradé de haut en bas */
     -webkit-background-clip: text; /* Affiche le dégradé à l'intérieur du texte */
     color: transparent; /* Rendre le texte transparent pour laisser le fond visible */
     background-clip: text; /* Pour les autres navigateurs */
+    text-shadow: 2px 2px 100px #f2ecec;  /* Ombre noire derrière le texte */
 }
 
 /* Ajout de pseudo-éléments pour créer les gouttes de sang */
-p:not(header p)::after {
+/*p:not(header p)::after {
     content: '';
     position: absolute;
     top: 100%;
@@ -36,15 +37,15 @@ p:not(header p)::after {
     width: 10px;
     height: 40px;
     background: linear-gradient(to bottom, #b30000, #800000); /* Effet dégradé pour le sang */
-    border-radius: 50%;
+   /* border-radius: 50%;
     animation: blood-drip 1.5s infinite ease-in-out;
     transform-origin: top center;
     transform: translateX(-50%);
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.8); /* Un léger flou autour des gouttes */
-}
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.8); /* Un léger flou autour des gouttes 
+}*/
 
 /* Ajout de gouttes supplémentaires pour un effet plus réaliste */
-p:not(header p)::before {
+/*p:not(header p)::before {
     content: '';
     position: absolute;
     top: 100%;
@@ -57,7 +58,7 @@ p:not(header p)::before {
     transform-origin: top center;
     transform: translateX(-50%);
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
-}
+}*/
 
 @keyframes blood-drip {
     0% {
