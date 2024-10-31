@@ -10,7 +10,8 @@
 }
 
 body {
-    background-image: url(./img/spiderWeb.png);
+    
+    background-image: url(./img/spiderWeb.png), no-repeat;
     background-color: #0b061f;
 }
 
@@ -294,7 +295,7 @@ h2 {
 }
 
 p {
-    margin-bottom: 20px;
+    
     text-align: center;
     padding-top: 25px;
     font-size: 25px;
@@ -302,6 +303,11 @@ p {
     justify-content: center;
     align-items: center;
     color: #fff;
+    margin: 0 20px; /* Marges à gauche et à droite */
+    background-color: #000; /* Fond noir complet */
+    padding: 10px; /* Espace autour du texte */
+    border-radius: 5px; /* Coins légèrement arrondis */
+    display: inline-block; /* Permet de ne pas étendre le fond sur toute la largeur */
 
 }
 
