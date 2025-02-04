@@ -7,12 +7,15 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Fruktur', cursive;
+    
 }
 
 body {
     
     background-image: url(./img/spiderWeb.png), no-repeat;
     background-color: #0b061f;
+    
+    
 }
 
 /* Style pour tous les <p> sauf ceux dans le <header> */
@@ -381,9 +384,12 @@ div {
 #img_14,
 #img_15,
 #img_16 {
+    
     padding: 10px 0 20px 0;
     height: 60%;
-    width: 80%;
+    width: 375px; /* Largeur d'un iPhone standard */
+    margin: 0 auto; /* Centre la page */
+    overflow-x: hidden; /* Évite le défilement horizontal */
 }
 
 
